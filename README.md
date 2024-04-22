@@ -144,6 +144,7 @@ cd ..
 
 
 ## installing sibc
+ export PYTHONENCODING=utf_8
 ```
 git clone https://github.com/JJChiDguez/sibc
 ```
