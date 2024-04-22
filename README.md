@@ -148,11 +148,23 @@ git clone https://github.com/JJChiDguez/sibc
 ```
 cd sibc
 ```
+Open setup.py by nano
+```
+nano setup.py
+```
+search long_description and change :  
+```
+with open("README.md", "r") as obj : 
+```
+by
+```
+with open("README.md", "r", encoding="utf-8") as obj : 
+```
 ```
 python3 setup.py bdist_deb
 ```
 ```
-sudo python3 setup.py install
+python3 setup.py install
 ```
 ```
 python3 sibc csidh-bench
