@@ -107,7 +107,7 @@ apt install -y dh-python python3-click python3-progress  python3-numpy python3-m
 pip3 install dh click numpy progress matplotlib networkx stdeb setuptools-scm setuptools
 ```
 Note : 
-pip3 install "pillow<5.1.0"
+pip3 install "pillow<5.1.0" </br>
 pip3 install "matplotlib<3.1.1"
 ```
 apt-get install python-all
@@ -164,12 +164,6 @@ python3 sibc -p p512 -f hvelu -a csidh -s df -e 10 csidh-main
 sibc -p p512 -f hvelu -a csidh -s df -e 10 csidh-main
 ```
 ## Testing : 
-```
-wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/Cryptodome/main/real_csidh.py
-```
-```
-python3 real_csidh.py 
-```
 ```
 wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/Cryptodome/main/real_csidh.py
 ```
