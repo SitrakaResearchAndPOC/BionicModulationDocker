@@ -221,6 +221,10 @@ python3 shared_csidh_sibc.py -p alice.pub -s bob.priv -k key1.key
 ```
 python3 shared_csidh_sibc.py -p bob.pub -s alice.priv -k key2.key
 ```
+```
+cd ..
+```
+
 # TESTING AES AND QUANTUM SAFE AES
 ```
 git clone https://github.com/SitrakaResearchAndPOC/Python_PQAES_FO.git
