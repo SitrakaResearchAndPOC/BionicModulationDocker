@@ -166,6 +166,13 @@ python3 setup.py bdist_deb
 ```
 python3 setup.py install
 ```
+Tape before benchmark csidh
+```
+export LC_ALL=C.UTF-8
+```
+```
+export LANG=C.UTF-8
+```
 ```
 python3 sibc csidh-bench
 ```
