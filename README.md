@@ -101,11 +101,10 @@ pip3 install sympy
 pip3 install Exit
 ```
 ```
-sudo apt install -y dh-python python3-click python3-progress  python3-numpy python3-matplotlib python3-networkx   python3-stdeb python3-setuptools-scm python3-setuptools python3-cpuinfo
-pip3 install dh click numpy progress matplotlib networkx stdeb setuptools-scm setuptools
+apt install -y dh-python python3-click python3-progress  python3-numpy python3-matplotlib python3-networkx   python3-stdeb python3-setuptools-scm python3-setuptools python3-cpuinfo pip3 install dh click numpy progress matplotlib networkx stdeb setuptools-scm setuptools
 ```
 ```
-sudo apt-get install python-all
+apt-get install python-all
 ```
 ## constant time csurf and crads
 ```
