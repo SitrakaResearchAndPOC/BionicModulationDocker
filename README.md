@@ -142,9 +142,7 @@ cd ..
 
 ## installing sibc
  export PYTHONENCODING=utf_8
-```
 update-alternatives --install /usr/bin/python python /usr/bin/python3.8 10
-```
 ```
 git clone https://github.com/JJChiDguez/sibc
 ```
