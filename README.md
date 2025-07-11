@@ -1,6 +1,6 @@
 # BionicModulationDocker
 # INSTALLATION OF MODULATION
-## preparing image
+## PREPARING IMAGE
 ```
 xhost +
 ```
@@ -20,7 +20,7 @@ apt update
 apt install nano firefox
 ```
 
-## testing firexfox
+# TESTING FIREFOX
 ```
 firefox
 ```
@@ -45,7 +45,7 @@ wget https://media.githubusercontent.com/media/SitrakaResearchAndPOC/fork_fm_tra
 ```
 unzip FM_Transmitter.zip
 ```
-## open new terminal :
+## OPEN NEW TERMINAL
 ```
 docker ps
 ```
@@ -116,7 +116,7 @@ pip3 install "matplotlib<3.1.1"
 ```
 apt-get install python-all
 ```
-## constant time csurf and crads
+## CONSTANT TIME CSIDH AN CRADS
 ```
 git clone https://github.com/Krijn-math/Constant-time-CSURF-CRADS
 ```
@@ -144,7 +144,7 @@ cd ..
 ```
 
 
-## installing sibc
+## INSTALLING
  export PYTHONENCODING=utf_8
 update-alternatives --install /usr/bin/python python /usr/bin/python3.8 10
 ```
@@ -191,7 +191,7 @@ python3 sibc -p p512 -f hvelu -a csidh -s df -e 10 csidh-main
 ```
 sibc -p p512 -f hvelu -a csidh -s df -e 10 csidh-main
 ```
-## Testing : 
+## TESTING
 ```
 wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/Cryptodome/main/real_csidh.py
 ```
