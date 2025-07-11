@@ -77,6 +77,10 @@ pip3 install progressbar
 ```
 pip3 uninstall numpy
 ```
+POUR ARM SEULEMENT
+```
+apt install python3-numpy
+```
 ```
 pip3 install "numpy<1.20.0"
 ```
@@ -174,6 +178,10 @@ export LC_ALL=C.UTF-8
 ```
 export LANG=C.UTF-8
 ```
+CASE FOR ARM ONLY
+```
+pip3 install --upgrade click
+```
 ```
 python3 sibc csidh-bench
 ```
@@ -257,8 +265,12 @@ python3 FO.py -e test.txt -a sha256 -k bob.priv
 ```
 python3 FO.py -d test.txt.fo -a sha256 -k bob.priv 
 ```
+Named the decipherd document as :
 ```
-tail f test_fo.txt 
+test_fo.txt
+```
+```
+tail -f test_fo.txt 
 ```
 ```
 python3 PQAES.py
