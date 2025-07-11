@@ -368,9 +368,9 @@ check md5sum for encoded_file.txt
 ```
 docker exec -it bionicmodulation md5sum home/all_transmission/transmission/encoded_file.txt
 ```
-658a69efae94d3c130cb7cca412677d8  home/all_transmission/transmission/encoded_file.txt
-Launch hackrf_info for copying id : 
-Copy id of hackrf
+658a69efae94d3c130cb7cca412677d8  home/all_transmission/transmission/encoded_file.txt </br>
+Launch hackrf_info for copying id : </br>
+Copy id of hackrf </br>
 ```
 docker exec -it bionicmodulation hackrf_info
 ```
