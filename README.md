@@ -376,10 +376,68 @@ docker exec -it bionicmodulation hackrf_info
 ```
 eg : </br>
 0000000000000000355867dc324d7c0b </br>
-Launch gnuradio-companion
+Launch gnuradio-companion and choose the modulation at /home/all_transmission/transmission
 ```
 docker exec -it bionicmodulation gnuradio-companion
 ```
 Change the path of encoded_file.txt and id of hackrf as copied 
+
+## ALL RECEPTION
+```
+docker exec -it bionicmodulation bash
+```
+* Installing pdf viewer for arm
+```
+apt install mupdf
+```
+* Installing pdf viewer for ubuntu-desktop
+```
+apt install xdg-utils
+```
+Create directory for reception
+```
+mkdir -p /home/all_reception/
+```
+```
+cd /home/all_reception/
+```
+Downloads file for reception
+```
+wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/BionicModulationDocker/refs/heads/main/all_reception/Reception.zip
+```
+```
+unzip Reception.zip
+```
+Find all files and all modulation at reception
+```
+docker exec -it bionicmodulation ls home/all_reception/reception/
+```
+Find id of hackrf to be copyed at the gnuradio-companion
+```
+docker exec -it bionicmodulation hackrf_info
+```
+0000000000000000629461dc23815153 </br>
+Lauch gnuradio-companion for the demodulation at /home/all_reception/reception </br>
+```
+docker exec -it bionicmodulation gnuradio-companion
+```
+Choose the modulation for reception </br>
+Change the id of hack_rf </br>
+Change the place for osmocom and the name : /home/all_reception/reception/decode_file.txt</br>
+Monitor all received file </br>
+```
+docker exec -it bionicmodulation bash -c "cd home/all_reception/reception/; tail -f decode_file.txt"
+```
+Launch decoding file </br>
+```
+docker exec -it bionicmodulation bash -c "cd home/all_reception/reception/; python3 decode_file.py"
+```
+```
+docker exec -it bionicmodulation bash -c "cd home/all_reception/reception/; mupdf decoded_file.pdf"
+```
+Stop gnuradio-companion and remove the file captured
+```
+docker exec -it bionicmodulation bash -c "cd home/all_reception/reception/; rm -rf decode_file.txt"
+```
 
 
