@@ -300,3 +300,51 @@ docker exec -ti bionicmodulation hackrf_info
 ```
 docker exec -ti bionicmodulation gnuradio-companion
 ```
+# USE CASE
+## ALL TRANSMISSION
+* Preparing image
+```
+docker image load <  bionicmodulation.tar.gz
+```
+```
+xhost +
+```
+```
+docker run --hostname transmission -tid --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY"  --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" --name bionicmodulation <image_all>
+```
+```
+cd /home
+```
+```
+mkdir all_transmission
+```
+```
+cd all_transmission
+```
+```
+wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/BionicModulationDocker/refs/heads/main/all_transmission/Transmission.zip
+```
+```
+unzip Transmission.zip
+```
+```
+cd transmission
+```
+```
+wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/BionicModulationDocker/refs/heads/main/all_transmission/Test_Taille.zip
+```
+```
+unzip Test_Taille.zip
+```
+```
+wget https://github.com/SitrakaResearchAndPOC/BionicModulationDocker/blob/main/all_transmission/encoded_file.txt
+```
+```
+md5sum encoded_file.txt 
+```
+cdbea4c82c5f0e20a2b6c46c7ceaddb3  encoded_file.txt
+```
+rm -rf encoded_file.txt 
+```
+
+
