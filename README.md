@@ -346,5 +346,40 @@ cdbea4c82c5f0e20a2b6c46c7ceaddb3  encoded_file.txt
 ```
 rm -rf encoded_file.txt 
 ```
+Find all file and modulation
+```
+docker exec -it bionicmodulation ls home/all_transmission/transmission/
+```
+Change the configuration of name file : 
+```
+docker exec -it bionicmodulation nano home/all_transmission/transmission/encode_file.py 
+```
+Configure as : </br>
+fichier_pdf = 'test.pdf' </br>
+Encoding as text for modulation
+```
+docker exec -it bionicmodulation bash -c "cd home/all_transmission/transmission/; python3 encode_file.py"
+```
+Print all file and all modulation
+```
+docker exec -it bionicmodulation ls home/all_transmission/transmission/encoded_file.txt
+```
+check md5sum for encoded_file.txt
+```
+docker exec -it bionicmodulation md5sum home/all_transmission/transmission/encoded_file.txt
+```
+658a69efae94d3c130cb7cca412677d8  home/all_transmission/transmission/encoded_file.txt
+Launch hackrf_info for copying id : 
+Copy id of hackrf
+```
+docker exec -it bionicmodulation hackrf_info
+```
+eg : </br>
+0000000000000000355867dc324d7c0b </br>
+Launch gnuradio-companion
+```
+docker exec -it bionicmodulation gnuradio-companion
+```
+Change the path of encoded_file.txt and id of hackrf as copied 
 
 
