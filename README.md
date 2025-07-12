@@ -321,8 +321,7 @@ docker ps
 ```
 
 
-# USE CASE
-## ALL TRANSMISSION
+# USE CASE ALL TRANSMISSION
 * Preparing image
 ```
 xhost +
@@ -361,7 +360,7 @@ cdbea4c82c5f0e20a2b6c46c7ceaddb3  encoded_file.txt
 ```
 rm -rf encoded_file.txt 
 ```
-IN NEW TERMINAL </br>
+* IN NEW TERMINAL 
 Find all file and modulation
 ```
 docker exec -it bionicmodulation ls home/all_transmission/transmission/
@@ -392,13 +391,16 @@ docker exec -it bionicmodulation hackrf_info
 ```
 eg : </br>
 0000000000000000355867dc324d7c0b </br>
-Launch gnuradio-companion and choose the modulation at /home/all_transmission/transmission
+Launch gnuradio-companion 
 ```
 docker exec -it bionicmodulation gnuradio-companion
 ```
-Change the path of encoded_file.txt and id of hackrf as copied 
+Choose modulation path at /home/all_transmission/transmission </br>
+Change the path of encoded_file.txt and id of hackrf as copied </br> 
+Change the id of hack_rf </br>
+Change the place for osmocom and the name : /home/all_reception/reception/decode_file.txt </br>
 
-## ALL RECEPTION
+# USE CASE ALL RECEPTION
 ```
 docker exec -it bionicmodulation bash -c "cd /home; /bin/bash"
 ```
@@ -438,7 +440,7 @@ Lauch gnuradio-companion for the demodulation at /home/all_reception/reception <
 ```
 docker exec -it bionicmodulation gnuradio-companion
 ```
-Choose the modulation for reception </br>
+Choose the modulation for reception at /home/all_reception/reception </br>
 Change the id of hack_rf </br>
 Change the place for osmocom and the name : /home/all_reception/reception/decode_file.txt</br>
 Monitor all received file </br>
@@ -463,7 +465,8 @@ docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v3.0-all-
 ```
 docker save images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit-receive -o images_bionicmodulation_<arm/intel/amd>_v3.0-all-transmit-receive.tar.gz
 ```
-* Load and run transmission
+
+# LOAD AND RUN TRANSMISSION
 ```
 docker load -i images_bionicmodulation_<arm/intel/amd>_v3.0-all-transmit-receive.tar.gz
 ```
@@ -471,7 +474,9 @@ verify images
 ```
 docker images
 ```
-FOR TRANSMISSION </br>
+```
+xhost +
+```
 launching processus (container) 
 ```
 docker run -itd --name bionicmodulation-all-transmit --hostname all-transmit --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY"  --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit-receive
@@ -480,20 +485,60 @@ verify processus (container)
 ```
 docker ps
 ```
+Find all file and modulation
 ```
-docker exec -it bionicmodulation-all-transmit  hackrf_info
+docker exec -it bionicmodulation-all-transmit ls home/all_transmission/transmission/
 ```
-Copy the id of the hackr for transmit
+Change the configuration of name file : 
 ```
-docker exec -it bionicmodulation-all-transmit  gnuradio-companion
+docker exec -it bionicmodulation-all-transmit nano home/all_transmission/transmission/encode_file.py 
 ```
-Open transmission at : /home/all_transmission/transmission/<modulation.py>
-Change the id of the hackrf at osmocom_sink  </br>
-Change the file to be transmitted </br>
-Change at the block QT GUI Frequency bloc, the parameter center_freq, change 106.2e6 to center_freq </br>
-</br></br>
+Configure as : </br>
+fichier_pdf = 'test.pdf' </br> </br>
+Encoding as text for modulation 
+```
+docker exec -it bionicmodulation-all-transmit bash -c "cd home/all_transmission/transmission/; python3 encode_file.py"
+```
+Print all file and all modulation
+```
+docker exec -it bionicmodulation-all-transmit ls home/all_transmission/transmission/encoded_file.txt
+```
+check md5sum for encoded_file.txt
+```
+docker exec -it bionicmodulation-all-transmit md5sum home/all_transmission/transmission/encoded_file.txt
+```
+658a69efae94d3c130cb7cca412677d8  home/all_transmission/transmission/encoded_file.txt </br>
+Launch hackrf_info for copying id : </br>
+Copy id of hackrf </br>
+```
+docker exec -it bionicmodulation-all-transmit hackrf_info
+```
+eg : </br>
+0000000000000000355867dc324d7c0b </br>
+Launch gnuradio-companion 
+```
+docker exec -it bionicmodulation-all-transmit gnuradio-companion
+```
+Choose modulation path at /home/all_transmission/transmission </br>
+Change the path of encoded_file.txt and id of hackrf as copied </br> 
+Change the id of hack_rf </br>
+Change the place for osmocom and the name : /home/all_reception/reception/decode_file.txt </br>
 
-FOR RECEPTION </br>
+
+
+
+
+# LOAD AND RUN FOR RECEPTION
+```
+docker load -i images_bionicmodulation_<arm/intel/amd>_v3.0-all-transmit-receive.tar.gz
+```
+verify images
+```
+docker images
+```
+```
+xhost +
+```
 launching processus (container) 
 ```
 docker run -itd --name bionicmodulation-all-receive --hostname all-receive --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY"  --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit-receive
@@ -502,18 +547,37 @@ verify processus (container)
 ```
 docker ps
 ```
+Find all files and all modulation at reception
 ```
-docker exec -it bionicmodulation-all-receive  hackrf_info
+docker exec -it bionicmodulation-all-receive ls home/all_reception/reception/
 ```
-Copy the id of the hackr for transmit
+Find id of hackrf to be copyed at the gnuradio-companion
 ```
-docker exec -it bionicmodulation-all-receive  gnuradio-companion
+docker exec -it bionicmodulation-all-receive hackrf_info
 ```
-Open transmission at : /home/all_reception/reception/<modulation.py>
-Change the id of the hackrf at osmocom_sink  </br>
-Change the file to be transmitted </br>
-Change at the block QT GUI Frequency bloc, the parameter center_freq, change 106.2e6 to center_freq </br>
-
+0000000000000000629461dc23815153 </br>
+Lauch gnuradio-companion for the demodulation at /home/all_reception/reception </br>
+```
+docker exec -it bionicmodulation-all-receive gnuradio-companion
+```
+Choose the modulation for reception at /home/all_reception/reception </br>
+Change the id of hack_rf </br>
+Change the place for osmocom and the name : /home/all_reception/reception/decode_file.txt</br>
+Monitor all received file </br>
+```
+docker exec -it bionicmodulation-all-receive bash -c "cd home/all_reception/reception/; tail -f decode_file.txt"
+```
+Launch decoding file </br>
+```
+docker exec -it bionicmodulation-all-receive bash -c "cd home/all_reception/reception/; python3 decode_file.py"
+```
+```
+docker exec -it bionicmodulation-all-receive bash -c "cd home/all_reception/reception/; mupdf decoded_file.pdf"
+```
+Stop gnuradio-companion and remove the file captured
+```
+docker exec -it bionicmodulation-all-receive bash -c "cd home/all_reception/reception/; rm -rf decode_file.txt"
+```
 
 # RESUME SAVING IMAGE
 ```
