@@ -245,6 +245,7 @@ python3 shared_csidh_sibc.py -p alice.pub -s bob.priv -k key1.key
 ```
 python3 shared_csidh_sibc.py -p bob.pub -s alice.priv -k key2.key
 ```
+The two key should be the same at the two commands
 ```
 cd ..
 ```
