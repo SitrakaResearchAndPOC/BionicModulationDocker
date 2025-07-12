@@ -360,6 +360,7 @@ cdbea4c82c5f0e20a2b6c46c7ceaddb3  encoded_file.txt
 ```
 rm -rf encoded_file.txt 
 ```
+IN NEW TERMINAL </br>
 Find all file and modulation
 ```
 docker exec -it bionicmodulation ls home/all_transmission/transmission/
