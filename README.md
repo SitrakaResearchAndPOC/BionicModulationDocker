@@ -59,7 +59,7 @@ docker images
 ```
 launching processus (container) 
 ```
-docker run -itd --name bionicmodulation-fm --hostname images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit
+docker run -itd --name bionicmodulation-fm --hostname fm images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit
 ```
 verify processus (container) 
 ```
@@ -294,6 +294,30 @@ tail -f test_fo.txt
 ```
 ```
 python3 PQAES.py
+```
+```
+Commit for the first version : 
+```
+docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v2.0-crypto
+```
+```
+docker save images_bionicmodulation_<arm/intel/amd>:v2.0-crypto -o images_bionicmodulation_<arm/intel/amd>_v2.0-crypto
+```
+* Load and run FM transmit
+```
+docker load -i images_bionicmodulation_<arm/intel/amd>_v2.0-crypto
+```
+verify images
+```
+docker images
+```
+launching processus (container) 
+```
+docker run -itd --name bionicmodulation-crypto --hostname crypto images_bionicmodulation_<arm/intel/amd>:v2.0-crypto
+```
+verify processus (container) 
+```
+docker ps
 ```
 
 
