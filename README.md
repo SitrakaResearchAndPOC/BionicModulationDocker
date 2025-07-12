@@ -269,8 +269,9 @@ python3 AES.py -e test.txt -c 128
 ```
 python3 AES.py -d test.txt.aes -c 128
 ```
+Name the decrypted file as :
 ```
-Name the decrypted file as test_dec.txt
+test_dec.txt
 ```
 ```
 tail -f test_dec.txt
@@ -295,30 +296,7 @@ tail -f test_fo.txt
 python3 PQAES.py
 ```
 
-# SAVING IMAGE
-```
-docker image save bionicmodulation > bionicmodulation.tar.gz
-```
 
-# LOAD AND RUN
-```
-docker image load <  bionicmodulation.tar.gz
-```
-```
-xhost +
-```
-```
-docker run -tid --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY"  --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" --name bionicmodulation bionicmodulation
-```
-```
-docker ps 
-```
-```
-docker exec -ti bionicmodulation hackrf_info
-```
-```
-docker exec -ti bionicmodulation gnuradio-companion
-```
 # USE CASE
 ## ALL TRANSMISSION
 * Preparing image
@@ -460,3 +438,27 @@ docker exec -it bionicmodulation bash -c "cd home/all_reception/reception/; rm -
 ```
 
 
+# RESUME SAVING IMAGE
+```
+docker image save bionicmodulation > bionicmodulation.tar.gz
+```
+
+# RESUME LOAD AND RUN
+```
+docker image load <  bionicmodulation.tar.gz
+```
+```
+xhost +
+```
+```
+docker run -tid --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY"  --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" --name bionicmodulation bionicmodulation
+```
+```
+docker ps 
+```
+```
+docker exec -ti bionicmodulation hackrf_info
+```
+```
+docker exec -ti bionicmodulation gnuradio-companion
+```
