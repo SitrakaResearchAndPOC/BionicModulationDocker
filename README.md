@@ -327,7 +327,7 @@ docker ps
 xhost +
 ```
 ```
-docker exec -it bionicmodule bash -c "cd /home; /bin/bash"
+docker exec -it bionicmodulation bash -c "cd /home; /bin/bash"
 ```
 ```
 mkdir all_transmission
