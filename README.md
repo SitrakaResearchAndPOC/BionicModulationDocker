@@ -34,10 +34,7 @@ apt install git unzip
 apt install wget
 ```
 ```
-mkdir FM-Modulation
-```
-```
-cd FM-Modulation
+cd /home
 ```
 ```
 wget https://media.githubusercontent.com/media/SitrakaResearchAndPOC/fork_fm_transmitter/main/FM_Transmitter.zip
@@ -45,23 +42,44 @@ wget https://media.githubusercontent.com/media/SitrakaResearchAndPOC/fork_fm_tra
 ```
 unzip FM_Transmitter.zip
 ```
-## OPEN NEW TERMINAL
+Commit for the first version : 
+```
+docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit
+```
+```
+docker save images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit -o images_bionicmodulation_<arm/intel/amd>_v1.0-fm-transmit
+```
+* Load and run FM transmit
+```
+docker load -i images_bionicmodulation_<arm/intel/amd>_v1.0-fm-transmit
+```
+verify images
+```
+docker images
+```
+launching processus (container) 
+```
+docker run -itd --name bionicmodulation-fm --hostname images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit
+```
+verify processus (container) 
 ```
 docker ps
 ```
-get the id : 
 ```
-docker commit <id> bionicmodulation
+docker exec -it bionicmodulation-fm  hackrf_info
 ```
-verify
+Copy the id of the hackr for transmit
 ```
-docker images 
+docker exec -it bionicmodulation-fm  gnuradio-companion
 ```
-PLUG HACKRF AND VERIFY
-```
-hackrf_info
-```
+Change the id of the hackrf at osmocom_sink  </br>
+Change the file to be transmitted </br>
+Change at the block QT GUI Frequency bloc, the parameter center_freq, change 106.2e6 to center_freq </br>
+
 # INSTALLING CIPHERING AES AND QUANTUM SAFE AES
+```
+docker exec -it bionicmodulation bash -c "cd /home; /bin/bash"
+```
 ```
 apt update
 ```
