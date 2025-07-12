@@ -59,7 +59,7 @@ docker images
 ```
 launching processus (container) 
 ```
-docker run -itd --name bionicmodulation-fm --hostname fm images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit
+docker run -itd --name bionicmodulation-fm --hostname fm --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY"  --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit
 ```
 verify processus (container) 
 ```
@@ -312,7 +312,7 @@ docker images
 ```
 launching processus (container) 
 ```
-docker run -itd --name bionicmodulation-crypto --hostname crypto images_bionicmodulation_<arm/intel/amd>:v2.0-crypto
+docker run -itd --name bionicmodulation-crypto --hostname crypto --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY"  --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" images_bionicmodulation_<arm/intel/amd>:v2.0-crypto
 ```
 verify processus (container) 
 ```
@@ -324,16 +324,10 @@ docker ps
 ## ALL TRANSMISSION
 * Preparing image
 ```
-docker image load <  bionicmodulation.tar.gz
-```
-```
 xhost +
 ```
 ```
-docker run --hostname transmission -tid --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY"  --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" --name bionicmodulation <image_all>
-```
-```
-cd /home
+docker exec -it bionicmodule bash -c "cd /home; /bin/bash"
 ```
 ```
 mkdir all_transmission
@@ -464,6 +458,10 @@ docker exec -it bionicmodulation bash -c "cd home/all_reception/reception/; rm -
 # RESUME SAVING IMAGE
 ```
 docker image save bionicmodulation > bionicmodulation.tar.gz
+```
+# RESUME LAUNCHING 
+```
+docker run --hostname transmission -tid --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY"  --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" --name bionicmodulation <image_all>
 ```
 
 # RESUME LOAD AND RUN
