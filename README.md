@@ -370,8 +370,8 @@ Change the configuration of name file :
 docker exec -it bionicmodulation nano home/all_transmission/transmission/encode_file.py 
 ```
 Configure as : </br>
-fichier_pdf = 'test.pdf' </br>
-Encoding as text for modulation
+fichier_pdf = 'test.pdf' </br> </br>
+Encoding as text for modulation 
 ```
 docker exec -it bionicmodulation bash -c "cd home/all_transmission/transmission/; python3 encode_file.py"
 ```
@@ -399,7 +399,7 @@ Change the path of encoded_file.txt and id of hackrf as copied
 
 ## ALL RECEPTION
 ```
-docker exec -it bionicmodulation bash
+docker exec -it bionicmodulation bash -c "cd /home; /bin/bash"
 ```
 * Installing pdf viewer for arm
 ```
