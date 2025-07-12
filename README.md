@@ -301,11 +301,11 @@ Commit for the second version :
 docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v2.0-crypto
 ```
 ```
-docker save images_bionicmodulation_<arm/intel/amd>:v2.0-crypto -o images_bionicmodulation_<arm/intel/amd>_v2.0-crypto
+docker save images_bionicmodulation_<arm/intel/amd>:v2.0-crypto -o images_bionicmodulation_<arm/intel/amd>_v2.0-crypto.tar.gz
 ```
 * Load and run crypto
 ```
-docker load -i images_bionicmodulation_<arm/intel/amd>_v2.0-crypto
+docker load -i images_bionicmodulation_<arm/intel/amd>_v2.0-crypto.tar.gz
 ```
 verify images
 ```
@@ -461,11 +461,11 @@ docker exec -it bionicmodulation bash -c "cd home/all_reception/reception/; rm -
 docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit-receive
 ```
 ```
-docker save images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit-receive -o images_bionicmodulation_<arm/intel/amd>_v3.0-all-transmit-receive
+docker save images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit-receive -o images_bionicmodulation_<arm/intel/amd>_v3.0-all-transmit-receive.tar.gz
 ```
 * Load and run transmission
 ```
-docker load -i images_bionicmodulation_<arm/intel/amd>_v3.0-all-transmit-receive
+docker load -i images_bionicmodulation_<arm/intel/amd>_v3.0-all-transmit-receive.tar.gz
 ```
 verify images
 ```
