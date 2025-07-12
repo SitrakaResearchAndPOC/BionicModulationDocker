@@ -423,7 +423,7 @@ wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/BionicModulationDoc
 ```
 unzip Reception.zip
 ```
-IN NEW TERMINAL
+IN NEW TERMINAL </br>
 Find all files and all modulation at reception
 ```
 docker exec -it bionicmodulation ls home/all_reception/reception/
@@ -455,6 +455,63 @@ Stop gnuradio-companion and remove the file captured
 ```
 docker exec -it bionicmodulation bash -c "cd home/all_reception/reception/; rm -rf decode_file.txt"
 ```
+* commit for third version (transmission)
+```
+docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit
+```
+```
+docker save images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit -o images_bionicmodulation_<arm/intel/amd>_v3.0-all-transmit-receive
+```
+* Load and run transmission
+```
+docker load -i images_bionicmodulation_<arm/intel/amd>_v3.0-all-transmit-receive
+```
+verify images
+```
+docker images
+```
+FOR TRANSMISSION </br>
+launching processus (container) 
+```
+docker run -itd --name bionicmodulation-all-transmit --hostname all-transmit --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY"  --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit-receive
+```
+verify processus (container) 
+```
+docker ps
+```
+```
+docker exec -it bionicmodulation-all-transmit  hackrf_info
+```
+Copy the id of the hackr for transmit
+```
+docker exec -it bionicmodulation-all-transmit  gnuradio-companion
+```
+Open transmission at : /home/all_transmission/transmission/<modulation.py>
+Change the id of the hackrf at osmocom_sink  </br>
+Change the file to be transmitted </br>
+Change at the block QT GUI Frequency bloc, the parameter center_freq, change 106.2e6 to center_freq </br>
+
+
+FOR RECEPTION </br>
+launching processus (container) 
+```
+docker run -itd --name bionicmodulation-all-receive --hostname all-receive --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY"  --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit-receive
+```
+verify processus (container) 
+```
+docker ps
+```
+```
+docker exec -it bionicmodulation-all-receive  hackrf_info
+```
+Copy the id of the hackr for transmit
+```
+docker exec -it bionicmodulation-all-receive  gnuradio-companion
+```
+Open transmission at : /home/all_reception/reception/<modulation.py>
+Change the id of the hackrf at osmocom_sink  </br>
+Change the file to be transmitted </br>
+Change at the block QT GUI Frequency bloc, the parameter center_freq, change 106.2e6 to center_freq </br>
 
 
 # RESUME SAVING IMAGE
