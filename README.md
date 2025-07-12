@@ -68,10 +68,11 @@ docker ps
 ```
 docker exec -it bionicmodulation-fm  hackrf_info
 ```
-Copy the id of the hackr for transmit
+Copy the id of the hackrf for transmit
 ```
 docker exec -it bionicmodulation-fm  gnuradio-companion
 ```
+Open the file at /home/FM_Transmitter/emetteur_fm.grc </br>
 Change the id of the hackrf at osmocom_sink  </br>
 Change the file to be transmitted </br>
 Change at the block QT GUI Frequency bloc, the parameter center_freq, change 106.2e6 to center_freq </br>
@@ -302,7 +303,7 @@ docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v2.0-cryp
 ```
 docker save images_bionicmodulation_<arm/intel/amd>:v2.0-crypto -o images_bionicmodulation_<arm/intel/amd>_v2.0-crypto
 ```
-* Load and run FM transmit
+* Load and run crypto
 ```
 docker load -i images_bionicmodulation_<arm/intel/amd>_v2.0-crypto
 ```
@@ -490,7 +491,7 @@ Open transmission at : /home/all_transmission/transmission/<modulation.py>
 Change the id of the hackrf at osmocom_sink  </br>
 Change the file to be transmitted </br>
 Change at the block QT GUI Frequency bloc, the parameter center_freq, change 106.2e6 to center_freq </br>
-
+</br></br>
 
 FOR RECEPTION </br>
 launching processus (container) 
