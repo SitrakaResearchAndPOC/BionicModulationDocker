@@ -458,10 +458,10 @@ docker exec -it bionicmodulation bash -c "cd home/all_reception/reception/; rm -
 ```
 * commit for third version (transmission)
 ```
-docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit
+docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit-receive
 ```
 ```
-docker save images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit -o images_bionicmodulation_<arm/intel/amd>_v3.0-all-transmit-receive
+docker save images_bionicmodulation_<arm/intel/amd>:v3.0-all-transmit-receive -o images_bionicmodulation_<arm/intel/amd>_v3.0-all-transmit-receive
 ```
 * Load and run transmission
 ```
