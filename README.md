@@ -1,5 +1,6 @@
 # BionicModulationDocker
 # INSTALLATION OF MODULATION
+IN TERMINAL 1
 ## PREPARING IMAGE
 ```
 xhost +
@@ -69,11 +70,7 @@ docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v1.0-fm-t
 ```
 docker save images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit -o images_bionicmodulation_<arm/intel/amd>_v1.0-fm-transmit
 ```
-# CLOSE NEW TERMINAL
-* exit in old terminal
-```
-exit
-```
+IN TERMINAL 2
 * Load and run FM transmit
 ```
 docker load -i images_bionicmodulation_<arm/intel/amd>_v1.0-fm-transmit
