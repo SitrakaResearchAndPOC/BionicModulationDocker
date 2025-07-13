@@ -70,7 +70,6 @@ docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v1.0-fm-t
 ```
 docker save images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit -o images_bionicmodulation_<arm/intel/amd>_v1.0-fm-transmit
 ```
-IN TERMINAL 2
 * Load and run FM transmit
 ```
 docker load -i images_bionicmodulation_<arm/intel/amd>_v1.0-fm-transmit
@@ -101,6 +100,7 @@ Change at the block QT GUI Frequency bloc, the parameter center_freq, change 106
 
 # INSTALLING CIPHERING AES AND QUANTUM SAFE AES
 IN TERMINAL 1
+* Preparing for acces at bionicmodulation container
 ```
 exit
 ```
@@ -110,6 +110,7 @@ xhost +
 ```
 docker exec -it bionicmodulation bash -c "cd /home; /bin/bash"
 ```
+* Installing AES and QUANTUM SAFE AES
 ```
 apt update
 ```
@@ -354,7 +355,7 @@ docker ps
 
 # USE CASE ALL TRANSMISSION
 IN TERMINAL 1
-* Preparing image
+* Preparing for acces at bionicmodulation container
 ```
 exit
 ```
@@ -364,6 +365,7 @@ xhost +
 ```
 docker exec -it bionicmodulation bash -c "cd /home; /bin/bash"
 ```
+* Installing usecase all_transmission
 ```
 mkdir all_transmission
 ```
