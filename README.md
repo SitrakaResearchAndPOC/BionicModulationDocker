@@ -65,7 +65,7 @@ wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/BionicModulationDoc
 # COMMIT FIRST VERSION 
 IN TERMINAL 2
 ```
-docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit
+docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit.tar.gz
 ```
 ```
 docker save images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit -o images_bionicmodulation_<arm/intel/amd>_v1.0-fm-transmit
