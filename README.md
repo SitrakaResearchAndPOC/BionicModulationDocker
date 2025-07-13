@@ -25,7 +25,7 @@ apt install nano firefox
 firefox
 ```
 ```
-apt install hackrf gnuradio rtl-sdr ffmpeg vlc gr-osmosdr
+apt install hackrf gnuradio rtl-sdr ffmpeg vlc gr-osmosdr uhd-host
 ```
 ```
 apt install git unzip
