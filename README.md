@@ -548,7 +548,7 @@ docker exec -it bionicmodulation-all-transmit bash -c "cd home/all_transmission/
 ```
 Print all file and all modulation
 ```
-docker exec -it bionicmodulation-all-transmit ls home/all_transmission/transmission/encoded_file.txt
+docker exec -it bionicmodulation-all-transmit ls home/all_transmission/transmission/
 ```
 check md5sum for encoded_file.txt
 ```
