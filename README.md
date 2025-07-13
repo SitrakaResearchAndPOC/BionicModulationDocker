@@ -62,8 +62,8 @@ cd FM_Transmitter
 ```
 wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/BionicModulationDocker/refs/heads/main/emetteur-fm-uhd.grc
 ```
-# COMMIT FIRST VERSION IN NEW TERMINAL
-Commit for the first version : 
+# COMMIT FIRST VERSION 
+IN TERMINAL 2
 ```
 docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit
 ```
@@ -326,7 +326,8 @@ tail -f test_fo.txt
 ```
 python3 PQAES.py
 ```
-Commit for the second version : 
+# COMMIT FIRST VERSION 
+IN TERMINAL 2
 ```
 docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v2.0-crypto
 ```
