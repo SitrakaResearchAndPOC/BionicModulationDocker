@@ -61,13 +61,18 @@ cd FM_Transmitter
 ```
 wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/BionicModulationDocker/refs/heads/main/emetteur-fm-uhd.grc
 ```
-
+# COMMIT FIRST VERSION IN NEW TERMINAL
 Commit for the first version : 
 ```
 docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit
 ```
 ```
 docker save images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit -o images_bionicmodulation_<arm/intel/amd>_v1.0-fm-transmit
+```
+# CLOSE NEW TERMINAL
+* exit in old terminal
+```
+exit
 ```
 * Load and run FM transmit
 ```
