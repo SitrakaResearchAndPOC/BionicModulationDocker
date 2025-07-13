@@ -439,6 +439,14 @@ Change the id of hack_rf </br>
 Change the place for osmocom and the name : /home/all_reception/reception/decode_file.txt </br>
 
 # USE CASE ALL RECEPTION
+IN TERMINAL 1
+* Preparing for having bionicmodulation container
+```
+exit
+```
+```
+xhost +
+```
 ```
 docker exec -it bionicmodulation bash -c "cd /home; /bin/bash"
 ```
