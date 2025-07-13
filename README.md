@@ -33,6 +33,16 @@ apt install git unzip
 ```
 apt install wget
 ```
+# Testing USRP
+```
+/usr/lib/uhd/utils/uhd_images_downloader.py
+```
+```
+uhd_find_devices
+```
+```
+uhd_usrp_probe
+```
 ```
 cd /home
 ```
