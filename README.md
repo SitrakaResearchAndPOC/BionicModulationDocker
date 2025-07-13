@@ -114,10 +114,10 @@ docker exec -it bionicmodulation bash -c "cd /home; /bin/bash"
 apt update
 ```
 ```
-apt-get install python3-pip wget
+apt install python3-pip wget
 ```
 ```
-apt-get install python3-pip
+apt install python3-pip
 ```
 ```
 pip3 install progressbar
@@ -162,7 +162,7 @@ Note :
 pip3 install "pillow<5.1.0" </br>
 pip3 install "matplotlib<3.1.1"
 ```
-apt-get install python-all
+apt install python-all
 ```
 ## CONSTANT TIME CSIDH AN CRADS
 ```
