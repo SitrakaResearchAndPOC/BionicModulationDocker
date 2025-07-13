@@ -472,7 +472,8 @@ wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/BionicModulationDoc
 ```
 unzip Reception.zip
 ```
-IN NEW TERMINAL </br>
+IN TERMINAL 2
+* Manipulation for all reception
 Find all files and all modulation at reception
 ```
 docker exec -it bionicmodulation ls home/all_reception/reception/
