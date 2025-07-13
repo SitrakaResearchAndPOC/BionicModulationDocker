@@ -100,6 +100,10 @@ Change the file to be transmitted </br>
 Change at the block QT GUI Frequency bloc, the parameter center_freq, change 106.2e6 to center_freq </br>
 
 # INSTALLING CIPHERING AES AND QUANTUM SAFE AES
+IN TERMINAL 1
+```
+exit
+```
 ```
 docker exec -it bionicmodulation bash -c "cd /home; /bin/bash"
 ```
