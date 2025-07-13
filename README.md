@@ -55,6 +55,13 @@ wget https://media.githubusercontent.com/media/SitrakaResearchAndPOC/fork_fm_tra
 ```
 unzip FM_Transmitter.zip
 ```
+```
+cd FM_Transmitter
+```
+```
+wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/BionicModulationDocker/refs/heads/main/emetteur-fm-uhd.grc
+```
+
 Commit for the first version : 
 ```
 docker commit bionicmodulation images_bionicmodulation_<arm/intel/amd>:v1.0-fm-transmit
