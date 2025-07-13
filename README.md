@@ -353,7 +353,11 @@ docker ps
 
 
 # USE CASE ALL TRANSMISSION
+IN TERMINAL 1
 * Preparing image
+```
+exit
+```
 ```
 xhost +
 ```
