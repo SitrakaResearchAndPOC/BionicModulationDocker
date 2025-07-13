@@ -38,6 +38,9 @@ apt install wget
 /usr/lib/uhd/utils/uhd_images_downloader.py
 ```
 ```
+uhd_images_downloader
+```
+```
 uhd_find_devices
 ```
 ```
