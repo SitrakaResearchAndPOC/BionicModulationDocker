@@ -213,6 +213,7 @@ by
 ```
 with open("README.md", "r", encoding="utf-8") as obj : 
 ```
+Tape ctrl+x and yes for saving file
 ```
 python3 setup.py bdist_deb
 ```
