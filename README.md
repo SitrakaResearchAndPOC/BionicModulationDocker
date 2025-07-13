@@ -105,6 +105,9 @@ IN TERMINAL 1
 exit
 ```
 ```
+xhost +
+```
+```
 docker exec -it bionicmodulation bash -c "cd /home; /bin/bash"
 ```
 ```
