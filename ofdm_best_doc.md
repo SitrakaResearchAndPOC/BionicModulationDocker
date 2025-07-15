@@ -1,6 +1,9 @@
 * Lesson
 * https://www.youtube.com/watch?v=OLsbONSQFUI
 
+* ofdm limesdr :
+* https://www.youtube.com/watch?v=2GBP_L-SCXE
+
 * https://www.youtube.com/watch?v=UjqSBin1vBA
   
 * https://github.com/gnuradio/gnuradio/tree/main/gr-digital/examples/ofdm
@@ -21,3 +24,38 @@
 * https://www.youtube.com/watch?v=Fks9mL_JW7A&pp=ugMICgJmchABGAHKBRFPRkRNIFNEUiBnbnVyYWRpbw%3D%3D
 
 * https://www.youtube.com/watch?v=84iohuol4fE
+
+* rf_hacking : 
+* https://www.youtube.com/watch?v=uoIYQsMgkWE&pp=ygURT0ZETSBTRFIgZ251cmFkaW8%3D
+* https://www.youtube.com/watch?v=t2s833DWDwQ
+
+
+
+* fbmc :
+* https://www.youtube.com/watch?v=M6Ix-B-0Z_Q&t=1069s&pp=ygURT0ZETSBTRFIgZ251cmFkaW8%3D
+* 
+gr-istb : 
+* https://www.youtube.com/watch?v=JR08fIObLAs
+* https://www.youtube.com/watch?v=p5SMmBVFfMk&pp=ygURT0ZETSBTRFIgZ251cmFkaW8%3D
+dvb :
+* https://www.youtube.com/watch?v=dJg2zAd3kRY
+
+FM fosphor : 
+* https://www.youtube.com/watch?v=hiNcjJEaqO8&t=1380s&pp=ygURT0ZETSBTRFIgZ251cmFkaW_SBwkJzQkBhyohjO8%3D
+
+* DVB-T :
+* https://www.youtube.com/watch?v=UzHbrAK-78o
+
+* CREATION OWN BLOC:
+* https://www.youtube.com/watch?v=0hJgCRnHTqM&pp=ygURT0ZETSBTRFIgZ251cmFkaW8%3D
+
+* Multiple access :
+* https://www.youtube.com/watch?v=r-RxGQuZLio&pp=ygURT0ZETSBTRFIgZ251cmFkaW8%3D
+ 
+* File transfering bpsk : 
+* https://www.youtube.com/watch?v=UpiaL1Hr6-s&pp=ygURT0ZETSBTRFIgZ251cmFkaW8%3D
+
+* fm transmitter with hackrf
+* combining bandwidth hackr
+* am modulation plutosdr
+* 
