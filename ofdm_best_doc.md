@@ -16,6 +16,8 @@
 * https://github.com/Prince-John/OFDM_with_hackrf
 
 * https://www.youtube.com/watch?v=-PPdA91ROqg&pp=ygURT0ZETSBTRFIgZ251cmFkaW8%3D
-* 
+
 
 * https://www.youtube.com/watch?v=Fks9mL_JW7A&pp=ugMICgJmchABGAHKBRFPRkRNIFNEUiBnbnVyYWRpbw%3D%3D
+
+* https://www.youtube.com/watch?v=84iohuol4fE
