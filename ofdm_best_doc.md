@@ -1,4 +1,7 @@
 * Lesson
+OFDM :
+* https://sites.google.com/ncsu.edu/aerpaw-user-manual/6-sample-experiments-repository/6-1-radio-software/6-1-3-gnu-radio-experiments/ge1-ofdm-tx-rx
+
 * https://www.youtube.com/watch?v=OLsbONSQFUI
 
 * ofdm limesdr :
