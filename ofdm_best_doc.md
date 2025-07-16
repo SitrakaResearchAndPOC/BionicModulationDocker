@@ -1,4 +1,11 @@
+
+
 * Lesson
+OFDM :
+* https://www.youtube.com/watch?v=_Dt2RwqxVTk
+* https://www.youtube.com/watch?v=A3aJDPcvrHg
+* https://www.youtube.com/watch?v=XxAuGL6XkKU
+
 hACKRF OFDM
 * https://www.cse.wustl.edu/~jain/cse574-22/ftp/ofdm_sdr/index.html
 * https://github.com/Prince-John/OFDM_with_hackrf
