@@ -5,6 +5,9 @@
 * https://www.youtube.com/watch?v=2GBP_L-SCXE
 
 * https://www.youtube.com/watch?v=UjqSBin1vBA
+
+* ofdm bladerf  :
+https://www.youtube.com/watch?v=A3aJDPcvrHg
   
 * https://github.com/gnuradio/gnuradio/tree/main/gr-digital/examples/ofdm
 
