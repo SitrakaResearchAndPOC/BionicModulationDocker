@@ -1,4 +1,11 @@
+* REPLAY
 
+* HELLO WORLD
+https://www.youtube.com/watch?v=psCnVkjDta0
+https://www.youtube.com/watch?v=SiHD7z2IMVg&pp=ygURZ251cmFkaW8gKyBoYWNrcmY%3D
+
+* voice :
+https://www.youtube.com/watch?v=VcYf64nzUbc&pp=ygURZ251cmFkaW8gKyBoYWNrcmY%3D
 
 * Lesson
 OFDM :
