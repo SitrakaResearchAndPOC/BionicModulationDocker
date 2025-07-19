@@ -658,6 +658,8 @@ docker exec -ti bionicmodulation gnuradio-companion
 [GreatScottGadgets](https://www.youtube.com/playlist?list=PLu0BPYzTjiHru1KmPThmbY-8rRm3EWvUQ)
 [SDRLearning](https://www.youtube.com/playlist?list=PLywxmTaHNUNyKmgF70q8q3QHYIw_LFbrX)
 [JohnCraft](https://www.youtube.com/@jonkraft/playlists)
+[readthedocs.io](https://5g-prototype.readthedocs.io/en/latest/module_4_fundamentals/labs/Lab_4.html)
+[readthedocs.io](https://openofdm.readthedocs.io/en/latest/)
 [Muhammed Mustaqim](https://www.youtube.com/watch?v=BOjTlfsaxNE&list=PLekjWW73vM7sHT2fUYt0thkpuLbOb3HrC)
 [gnuradioeuropean2021](https://www.youtube.com/playlist?list=PLywxmTaHNUNyKmgF70q8q3QHYIw_LFbrX)
 [gnuradioeuropean2022](https://www.youtube.com/playlist?list=PLCfH8xIFcsLmTbeoYlLVAtLgapKoAcjTn)
