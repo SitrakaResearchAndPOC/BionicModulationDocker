@@ -1,3 +1,6 @@
+* hacking :
+https://www.youtube.com/watch?v=rH9oJJC79QI
+
 * combining hackr
 * https://www.youtube.com/watch?v=ZIIXO2ekWNo&pp=ygUpc29mdHdhcmUgZGVmaW5lZCByYWRpbyArIGZvc3Bob3IgKyBoYWNrcmY%3D
 * REPLAY
