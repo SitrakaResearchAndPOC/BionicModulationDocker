@@ -654,3 +654,12 @@ docker exec -ti bionicmodulation hackrf_info
 ```
 docker exec -ti bionicmodulation gnuradio-companion
 ```
+# Ressources
+[GreatScottGadgets](https://www.youtube.com/playlist?list=PLu0BPYzTjiHru1KmPThmbY-8rRm3EWvUQ)
+[SDRLearning](https://www.youtube.com/playlist?list=PLywxmTaHNUNyKmgF70q8q3QHYIw_LFbrX)
+[JohnCraft](https://www.youtube.com/@jonkraft/playlists)
+[Muhammed Mustaqim](https://www.youtube.com/watch?v=BOjTlfsaxNE&list=PLekjWW73vM7sHT2fUYt0thkpuLbOb3HrC)
+[gnuradioeuropean2021](https://www.youtube.com/playlist?list=PLywxmTaHNUNyKmgF70q8q3QHYIw_LFbrX)
+[gnuradioeuropean2022](https://www.youtube.com/playlist?list=PLCfH8xIFcsLmTbeoYlLVAtLgapKoAcjTn)
+[gnuradioeuropean2023](https://www.youtube.com/playlist?list=PLCfH8xIFcsLk7DrTsI0Ljr5jy7-wo6XiL)
+[gnuradioeuropean2024](https://www.youtube.com/playlist?list=PLCfH8xIFcsLlbGZoxYD5COcS3soTp_eOi)
