@@ -50,7 +50,11 @@ hACKRF OFDM
 * https://mimognuradio.wordpress.com/2018/07/20/week-10-designing-the-mimo-ofdm-receiver/
 * https://mimognuradio.wordpress.com/2018/06/29/week-07-mimo-ofdm/
 * mimo radar : https://blog.csdn.net/qq_41839588/article/details/139358120
- 
+* https://mimognuradio.wordpress.com/2018/07/20/week-10-designing-the-mimo-ofdm-receiver/
+
+dvbs2 : 
+https://forums.ni.com/t5/USRP-Software-Radio/DVB-S2-communication-between-two-USRP-B200-boards-with-GNU-Radio/td-p/4258776
+
 OFDM :
 * https://sites.google.com/ncsu.edu/aerpaw-user-manual/6-sample-experiments-repository/6-1-radio-software/6-1-3-gnu-radio-experiments/ge1-ofdm-tx-rx
 
