@@ -1,3 +1,5 @@
+* ofdm grc dvt : https://www.eet-china.com/mp/a40529.html
+  
 * hacking :
 https://www.youtube.com/watch?v=rH9oJJC79QI
 
