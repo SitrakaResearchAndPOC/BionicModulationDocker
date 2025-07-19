@@ -46,6 +46,8 @@ hACKRF OFDM
 * https://www.hackrf.net/2014/04/gnuradio-ofdm-tutorial-video/
 *   https://lists.gnu.org/archive/html/discuss-gnuradio/2017-09/msg00231.html
 *   3.7.10 : https://github.com/tfcollins/gr-ofdm
+* https://blog.csdn.net/qq_41839588/article/details/139358120
+
 OFDM :
 * https://sites.google.com/ncsu.edu/aerpaw-user-manual/6-sample-experiments-repository/6-1-radio-software/6-1-3-gnu-radio-experiments/ge1-ofdm-tx-rx
 
