@@ -660,6 +660,10 @@ docker exec -ti bionicmodulation gnuradio-companion
 * adalm pluto
 [JohnCraft](https://www.youtube.com/@jonkraft/playlists)
 [from_conception_circuit](https://www.youtube.com/@fromconcepttocircuit/playlists)
+[plutosdr1](https://www.youtube.com/watch?v=E7RjvDOudIo)
+[plutosdr2](https://www.youtube.com/watch?v=Rx1MF9FlScw)
+
+* other
 [readthedocs.io](https://5g-prototype.readthedocs.io/en/latest/module_4_fundamentals/labs/Lab_4.html)
 [readthedocs.io](https://openofdm.readthedocs.io/en/latest/)
 [Muhammed Mustaqim](https://www.youtube.com/watch?v=BOjTlfsaxNE&list=PLekjWW73vM7sHT2fUYt0thkpuLbOb3HrC)
