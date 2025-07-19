@@ -1,6 +1,7 @@
 * https://archive.fosdem.org/2022/schedule/event/radio_ofdmradar/
-ostf-mimo :
-https://github.com/ad-astra-et-ultra/OTFS-and-OFDM-Transceivers/tree/main/OFDM%20and%20OTFS%20transceivers
+* ostf-mimo :
+
+* https://github.com/ad-astra-et-ultra/OTFS-and-OFDM-Transceivers/tree/main/OFDM%20and%20OTFS%20transceivers
 
 * hackrf
 * https://www.hackrf.net/
