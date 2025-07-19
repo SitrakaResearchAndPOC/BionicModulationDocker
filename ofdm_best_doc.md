@@ -48,8 +48,9 @@ hACKRF OFDM
 *   3.7.10 : https://github.com/tfcollins/gr-ofdm
 * https://blog.csdn.net/qq_41839588/article/details/139358120
 * https://mimognuradio.wordpress.com/2018/07/20/week-10-designing-the-mimo-ofdm-receiver/
+* https://mimognuradio.wordpress.com/2018/06/29/week-07-mimo-ofdm/
 * mimo radar : https://blog.csdn.net/qq_41839588/article/details/139358120
-* 
+ 
 OFDM :
 * https://sites.google.com/ncsu.edu/aerpaw-user-manual/6-sample-experiments-repository/6-1-radio-software/6-1-3-gnu-radio-experiments/ge1-ofdm-tx-rx
 
