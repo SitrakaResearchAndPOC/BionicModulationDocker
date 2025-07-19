@@ -1,7 +1,11 @@
+*hackrf
+*https://www.hackrf.net/
+
 * hackrf gr-ieee :
 * https://blog.csdn.net/OpenSourceSDR/article/details/105294431
 * https://blog.csdn.net/qq_53732840/article/details/135521243
-
+* https://filterbankmulticarrier.projekte.fh-hagenberg.at/dvbt.html
+  
 * ofdm grc dvt : https://www.eet-china.com/mp/a40529.html
   
 * hacking :
