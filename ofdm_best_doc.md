@@ -35,7 +35,11 @@ hACKRF OFDM
 * https://github.com/gnuradio/gnuradio/tree/master/gr-digital/examples/ofdm 
 * https://k1fm.us/2014/08/i-finally-got-my-hackrf-and-i-have-a-mac-now-what/
 * https://ve7it.cowlug.org/HackRF_Siggen.html
-  
+* https://medium.com/@rxseger/sdr-first-project-initial-setup-node-hackrf-gnu-radio-on-linux-os-x-rpi-3-w-fm-tuner-ee16cdc8fd82
+* https://www.gnuradio.org/doc/doxygen-3.7.3/page_packet_data.html
+* https://wiki.gnuradio.org/index.php/Basic_OFDM_Tutorial
+* https://www.hackrf.net/2014/04/gnuradio-ofdm-tutorial-video/
+*   
 OFDM :
 * https://sites.google.com/ncsu.edu/aerpaw-user-manual/6-sample-experiments-repository/6-1-radio-software/6-1-3-gnu-radio-experiments/ge1-ofdm-tx-rx
 
