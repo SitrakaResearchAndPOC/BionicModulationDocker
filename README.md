@@ -662,7 +662,10 @@ docker exec -ti bionicmodulation gnuradio-companion
 [from_conception_circuit](https://www.youtube.com/@fromconcepttocircuit/playlists)
 [plutosdr1](https://www.youtube.com/watch?v=E7RjvDOudIo)
 [plutosdr2](https://www.youtube.com/watch?v=Rx1MF9FlScw)
-
+[plutosdr3](https://www.youtube.com/@charlestondaleambatali4158)
+[plutosdr4](https://www.youtube.com/@jihyunseo6445)
+[plutosdr5](https://github.com/bg3mdo/plutoSDR_fmstereo_offlinedemod)
+[plutosdr6](https://www.youtube.com/@ViMinhHieuBDCVT)
 * other
 [readthedocs.io](https://5g-prototype.readthedocs.io/en/latest/module_4_fundamentals/labs/Lab_4.html)
 [readthedocs.io](https://openofdm.readthedocs.io/en/latest/)
