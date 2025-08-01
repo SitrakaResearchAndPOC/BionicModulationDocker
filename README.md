@@ -655,22 +655,22 @@ docker exec -ti bionicmodulation hackrf_info
 docker exec -ti bionicmodulation gnuradio-companion
 ```
 # Ressources
-[GreatScottGadgets](https://www.youtube.com/playlist?list=PLu0BPYzTjiHru1KmPThmbY-8rRm3EWvUQ)
-[SDRLearning](https://www.youtube.com/playlist?list=PLywxmTaHNUNyKmgF70q8q3QHYIw_LFbrX)
+[GreatScottGadgets](https://www.youtube.com/playlist?list=PLu0BPYzTjiHru1KmPThmbY-8rRm3EWvUQ) </br>
+[SDRLearning](https://www.youtube.com/playlist?list=PLywxmTaHNUNyKmgF70q8q3QHYIw_LFbrX) </br>
 * adalm pluto
-[JohnCraft](https://www.youtube.com/@jonkraft/playlists)
-[from_conception_circuit](https://www.youtube.com/@fromconcepttocircuit/playlists)
-[plutosdr1](https://www.youtube.com/watch?v=E7RjvDOudIo)
-[plutosdr2](https://www.youtube.com/watch?v=Rx1MF9FlScw)
-[plutosdr3](https://www.youtube.com/@charlestondaleambatali4158)
-[plutosdr4](https://www.youtube.com/@jihyunseo6445)
-[plutosdr5](https://github.com/bg3mdo/plutoSDR_fmstereo_offlinedemod)
-[plutosdr6](https://www.youtube.com/@ViMinhHieuBDCVT)
+[JohnCraft](https://www.youtube.com/@jonkraft/playlists) </br>
+[from_conception_circuit](https://www.youtube.com/@fromconcepttocircuit/playlists) </br>
+[plutosdr1](https://www.youtube.com/watch?v=E7RjvDOudIo) </br>
+[plutosdr2](https://www.youtube.com/watch?v=Rx1MF9FlScw) </br>
+[plutosdr3](https://www.youtube.com/@charlestondaleambatali4158) </br>
+[plutosdr4](https://www.youtube.com/@jihyunseo6445) </br>
+[plutosdr5](https://github.com/bg3mdo/plutoSDR_fmstereo_offlinedemod) </br>
+[plutosdr6](https://www.youtube.com/@ViMinhHieuBDCVT) </br>
 * other
-[readthedocs.io](https://5g-prototype.readthedocs.io/en/latest/module_4_fundamentals/labs/Lab_4.html)
-[readthedocs.io](https://openofdm.readthedocs.io/en/latest/)
-[Muhammed Mustaqim](https://www.youtube.com/watch?v=BOjTlfsaxNE&list=PLekjWW73vM7sHT2fUYt0thkpuLbOb3HrC)
-[gnuradioeuropean2021](https://www.youtube.com/playlist?list=PLywxmTaHNUNyKmgF70q8q3QHYIw_LFbrX)
-[gnuradioeuropean2022](https://www.youtube.com/playlist?list=PLCfH8xIFcsLmTbeoYlLVAtLgapKoAcjTn)
-[gnuradioeuropean2023](https://www.youtube.com/playlist?list=PLCfH8xIFcsLk7DrTsI0Ljr5jy7-wo6XiL)
-[gnuradioeuropean2024](https://www.youtube.com/playlist?list=PLCfH8xIFcsLlbGZoxYD5COcS3soTp_eOi)
+[readthedocs.io](https://5g-prototype.readthedocs.io/en/latest/module_4_fundamentals/labs/Lab_4.html) </br>
+[readthedocs.io](https://openofdm.readthedocs.io/en/latest/) </br>
+[Muhammed Mustaqim](https://www.youtube.com/watch?v=BOjTlfsaxNE&list=PLekjWW73vM7sHT2fUYt0thkpuLbOb3HrC) </br>
+[gnuradioeuropean2021](https://www.youtube.com/playlist?list=PLywxmTaHNUNyKmgF70q8q3QHYIw_LFbrX) </br>
+[gnuradioeuropean2022](https://www.youtube.com/playlist?list=PLCfH8xIFcsLmTbeoYlLVAtLgapKoAcjTn) </br>
+[gnuradioeuropean2023](https://www.youtube.com/playlist?list=PLCfH8xIFcsLk7DrTsI0Ljr5jy7-wo6XiL) </br>
+[gnuradioeuropean2024](https://www.youtube.com/playlist?list=PLCfH8xIFcsLlbGZoxYD5COcS3soTp_eOi) </br>
