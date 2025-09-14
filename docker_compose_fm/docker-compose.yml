@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  bionicmodulation:
+    build: .
+    container_name: bionicmodulation-fm
+    privileged: true
+    network_mode: host
+    environment:
+      DISPLAY: ${DISPLAY}
+      LC_ALL: C.UTF-8
+      LANG: C.UTF-8
+    volumes:
+      - /dev/bus/usb:/dev/bus/usb
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - ${XAUTHORITY:-$HOME/.Xauthority}:/home/user/.Xauthority:ro
+    stdin_open: true
+    tty: true
+
