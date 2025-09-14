@@ -1,0 +1,173 @@
+    1  lazydocker
+    2  docker ps
+    3  lazydocker
+    4  ip a
+    5  snap install code --classic
+    6  apt updaet
+    7  apt update
+    8  apt install git
+    9  clear
+   10  exit
+   11  docker build -t cactus:step1 -f step1.Dockerfile .
+   12  clear
+   13  exit
+   14  ls
+   15  docker network create --driver overlay --opt encrypted exquisite
+   16  cat docker-compose.yml 
+   17  cat docker-compose2.yml 
+   18  docker volume rm exquisite
+   19  docker volume ls
+   20  docker volume rm exquisite_stack_mongo_data
+   21  docker volume rm -f exquisite_stack_mongo_data
+   22  docker volume ls
+   23  docker volume -help
+   24  docker volume rm  exquisite_stack_mongo_data
+   25  docker volume rm  exquisite
+   26  docker volume ls
+   27  docker volume rm  exquisite_stack_mongo_data
+   28  docker volume rm  -f exquisite_stack_mongo_data
+   29  docker swarm leave --force
+   30  docker volume rm  -f exquisite_stack_mongo_data
+   31  ls
+   32  mkdir exquisitev2
+   33  mv docker-compose2.yml  exquisitev2/
+   34  cd exquisitev2/
+   35  mv docker-compose2.yml docker-compose.yml 
+   36  clear
+   37  docker compose up -d
+   38  docker-compose up -d
+   39  docker swarm init
+   40  docker-compose up -d
+   41  docker stack deploy -c docker-compose.yml exquisite_stack
+   42  docker service update --force exquisite_stack_front
+   43  cat docker-compose.yml 
+   44  cd ..
+   45  ls
+   46  cat docker-compose.yml 
+   47  mkdir exquisite1
+   48  mv docker-compose.yml exquisite1
+   49  cd exquisite1/
+   50  dir
+   51  docker swarm leave --force
+   52  docker stack deploy -c docker-compose.yml exquisite_stack
+   53  docker swarm init
+   54  docker stack deploy -c docker-compose.yml exquisite_stack
+   55  cd ..
+   56  mv exquisitev2/ exquisite2
+   57  cd exquisite2/
+   58  mv docker-compose.yml docker-compose2.yml 
+   59  pinh 8.8.8.8
+   60  ping 8.8.8.8
+   61  clear
+   62  cat docker-compose2.yml 
+   63  nano docker-compose.yml
+   64  docker swarm init
+   65  docker swarm leave --force
+   66  docker swarm init
+   67  docker stack deploy -c docker-compose.yml exquisite_stack
+   68  docker swarm leave --force
+   69  nano docker-compose.yml
+   70  rm -rf docker-compose
+   71  nano docker-compose.yml 
+   72  rm -rf docker-compose.yml 
+   73  nano docker-compose.yml 
+   74  docker stack deploy -c docker-compose.yml exquisite_stack
+   75  docker swarm leave --force
+   76  docker swarm init
+   77  docker stack deploy -c docker-compose.yml exquisite_stack
+   78  nano docker-compose.yml 
+   79  docker stack deploy -c docker-compose.yml exquisite_stack
+   80  nano docker-compose.yml 
+   81  docker stack deploy -c docker-compose.yml exquisite_stack
+   82  git clone https://gitlab.com/thisalwijayakumara/gitlab-cicd-crash-course.git
+   83  ls
+   84  cd gitlab-cicd-crash-course/
+   85  dir
+   86  docker build -t test .
+   87  docker run -td -p 5000:5000 test
+   88  sudo apt install flatpak
+   89  flatpak install flathub io.github.shiftey.Desktop
+   90  flatpak
+   91  cd ..
+   92  wget https://github.com/shiftkey/desktop/releases/download/release-3.3.9-linux1/github-desktop-3.3.9-linux1.deb
+   93  snap search github-desktop
+   94  sudo apt install github-desktop
+   95  history
+   96  docker run --rm -it -p 5001:5001 ghcr.io/benc-uk/python-demoapp:latest
+   97  docker ps
+   98  docker stop $(docker ps -aq)
+   99  docker rm -f $(docker ps -aq)
+  100  docker ps
+  101  docker rmi  $(docker images -aq)
+  102  docker images
+  103  docker ps
+  104  docker rm -f $(docker ps -q)
+  105  docker ps
+  106  docker rmi  $(docker images -q)
+  107  docker ps
+  108  clear
+  109  docker run --rm -it -p 5000:5000 ghcr.io/benc-uk/python-demoapp:latest
+  110  docker swarm leave -force
+  111  docker swarm leave --force
+  112  nano docker-compose.yml
+  113  docker stack deploy -c docker-compose.yml exquisite_stack
+  114  docker swarm init
+  115  docker stack deploy -c docker-compose.yml exquisite_stack
+  116  docker ps
+  117  docker stack ps
+  118  docker stack --help
+  119  docker stack ls
+  120  docker servic ps
+  121  docker service ps
+  122  nano docker-compose.yml
+  123  mousepad docker-compose.yml 
+  124  apt install mousepad
+  125  mousepad docker-compose.yml 
+  126  nano docker-compose.yml
+  127  mv docker-compose.yml docker-compose2.yml 
+  128  nano docker-compose.yml 
+  129  docker stack deploy -c docker-compose.yml exquisite_stack
+  130  nano docker-compose2.yml 
+  131  mousepad docker-compose2.yml 
+  132  mousepad docker-compose.yml 
+  133  docker stack deploy -c docker-compose.yml exquisite_stack
+  134  docker service scale exquisite_stack_back=3
+  135  docker service scale exquisite_stack_back=15
+  136  mousepad docker-compose.yml 
+  137  docker service scale exquisite_stack_back=15
+  138  docker swarm leave --force
+  139  docker swarm init
+  140  docker stack deploy -c docker-compose.yml exquisite_stack
+  141  xhost +
+  142  docker image pull ubuntu:24.04
+  143  docker run -tid --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:/home/user/.Xauthority:ro --net=host --env="DISPLAY=$DISPLAY" --env="LC_ALL=C.UTF-8" --env="LANG=C.UTF-8" --name burpsuite2025 --hostname burpsuite2025 ubuntu:24.04
+  144  docker exec -ti burpsuite2025 /bin/bash
+  145  clear
+  146  mkdir bionicmodulation
+  147  cd bionicmodulation
+  148  nano Dockerfile
+  149  nano docker-compose.yml
+  150  rm -rf docker-compose.yml 
+  151  nano docker-compose.yml
+  152  xhost +
+  153  docker-compose up -d
+  154  nano docker-compose.yml
+  155  docker-compose up -d
+  156  rm -rf Dockerfile 
+  157  nano Dockerfile
+  158  docker-compose up -d
+  159  rm -rf Dockerfile 
+  160  nano Dockerfile
+  161  docker-compose up -d
+  162  docker ps
+  163  docker service ps
+  164  docker service ls
+  165  docker-compose up -d
+  166  docker compose ps
+  167  docker-compose ps
+  168  docker-compose exec bionicmodultion-fm
+  169  docker compose exec bionicmodulation uhd_usrp_probe
+  170  docker-compose exec bionicmodulation uhd_usrp_probe
+  171  docker-compose exec bionicmodulation gnuradio-companion
+  172  xhost +; docker-compose exec bionicmodulation gnuradio-companion
+  173  history >> all_history.txt
