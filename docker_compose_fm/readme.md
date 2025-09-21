@@ -74,7 +74,7 @@ services:
     stdin_open: true
     tty: true
 ```
-## Launching : 
+## Launching 
 ```
 docker-compose up -d
 ```
