@@ -1,6 +1,10 @@
 # Testing docker compose for fm modulation on bionic
 ## Creating Dockerfile
 ```
+nano Dockerfile
+```
+Tape ctrl+x + yes + enter
+```
 FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -55,6 +59,11 @@ CMD ["/bin/bash"]
 ```
 ## Creating docker-compose.yml
 ```
+nano docker-compose.yml
+```
+Tape ctrl+x + yes + enter
+
+```
 version: "3.8"
 
 services:
@@ -74,6 +83,7 @@ services:
     stdin_open: true
     tty: true
 ```
+
 ## Launching 
 ```
 docker-compose up -d
